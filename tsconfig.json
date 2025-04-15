@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "target": "esnext", // Use modern JavaScript features
+    "module": "esnext", // Use ES modules
+    "moduleResolution": "node", // Resolve modules using Node.js-style resolution
+    "strict": true, // Enable all strict type-checking options
+    "jsx": "preserve", // Needed for JSX in `.tsx` files
+    "esModuleInterop": true, // Ensure compatibility with CommonJS modules
+    "skipLibCheck": true, // Skip type checking of declaration files (improves performance)
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "allowSyntheticDefaultImports": true, // Allow default imports for non-ES modules
+    "noImplicitAny": true, // Ensure explicit types for everything
+    "isolatedModules": true, // Required for Vue SFCs
+    "resolveJsonModule": true // Allow importing `.json` files
+    //"types": ["vite/client", "node"] // Include type definitions for Vite and Node.js
+  },
+  "include": [
+    "src/**/*.ts", // Include all TypeScript files in the `src` folder
+    "src/**/*.d.ts", // Include declaration files
+    "src/**/*.tsx", // Include `.tsx` files for JSX/TSX support
+    "src/**/*.vue", // Include `.vue` files for Vue components
+    "src/stores/todoList.js"
+  ],
+  "exclude": [
+    "node_modules" // Exclude `node_modules`
+  ]
+}
